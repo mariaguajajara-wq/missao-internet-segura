@@ -1,0 +1,28 @@
+# Missão Internet Segura — 9º ano
+
+Projeto educativo com cinco jogos interativos em português:
+1. Escape Room Digital
+2. Investigação Digital
+3. Simulador de Decisões
+4. Organize sua Segurança (arrastar e soltar ou tocar)
+5. Labirinto dos Golpes (teclado e controles na tela)
+
+## Como abrir no VS Code
+1. Extraia o ZIP.
+2. Abra a pasta `central_seguranca_internet` no VS Code.
+3. Abra `index.html` no navegador; recomendado: extensão **Live Server**.
+4. Clique em **Go Live** no VS Code para testar localmente.
+
+Não precisa instalar bibliotecas nem usar servidor backend. O projeto usa HTML, CSS e JavaScript puro.
+
+## Como personalizar
+- Textos e desafios: `js/script.js`
+- Cores e aparência: `css/style.css`
+- Estrutura inicial: `index.html`
+
+## Como publicar e compartilhar
+Os arquivos locais só abrem no seu computador. Para criar um link público, publique a pasta em um serviço de hospedagem estática, como GitHub Pages ou Netlify. Não inclua dados pessoais, senhas ou informações reais dos alunos.
+
+## Observação pedagógica
+Os exemplos de mensagens, números e situações são fictícios. O jogo não solicita credenciais nem dados pessoais reais.
+O conteúdo segue a oficina sobre engenharia social, phishing, e-mail, SMS/smishing, WhatsApp, QR Codes, sinais de alerta, verificação por canais oficiais, proteção de códigos e oversharing.

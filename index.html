@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101827">
+  <title>Missão Internet Segura | 9º ano</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Página inicial" onclick="showHome();return false">
+      <span class="brand-mark">🛡️</span><span>MISSÃO <b>INTERNET SEGURA</b></span>
+    </a>
+    <div class="top-meta"><span class="class-tag">7º WORKSHOP DE INFORMÁTICA</span><span>9º ANO</span></div>
+  </header>
+
+  <main class="wrap">
+    <section id="home" class="screen active">
+      <div class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">CENTRAL DE OPERAÇÕES · EDUCAÇÃO DIGITAL</p>
+          <h1>Na internet, sua melhor defesa é <em>pensar antes de agir.</em></h1>
+          <p class="lead">Cinco missões interativas para aprender a reconhecer golpes, proteger seus dados e tomar decisões seguras.</p>
+          <div class="motto"><span>1</span> PARE <i>•</i> <span>2</span> CONFIRA <i>•</i> <span>3</span> SÓ DEPOIS AJA</div>
+        </div>
+        <div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="shield">🛡️</div><span class="float f1">🔒</span><span class="float f2">📩</span><span class="float f3">🔍</span></div>
+      </div>
+      <div class="section-heading"><div><p class="eyebrow">ESCOLHA SUA MISSÃO</p><h2>Qual desafio você vai encarar?</h2></div><span class="missions-count">05 JOGOS</span></div>
+      <div class="game-grid">
+        <button class="game-card card-purple" onclick="startGame('escape')"><span class="game-icon">🚪</span><span class="game-number">MISSÃO 01</span><strong>Escape Room Digital</strong><span>Encontre pistas, descubra códigos e escape da sala dos golpes.</span><b class="play-link">JOGAR AGORA ↗</b></button>
+        <button class="game-card card-blue" onclick="startGame('detective')"><span class="game-icon">🕵️</span><span class="game-number">MISSÃO 02</span><strong>Investigação Digital</strong><span>Examine mensagens e evidências para reconstruir uma tentativa de golpe.</span><b class="play-link">JOGAR AGORA ↗</b></button>
+        <button class="game-card card-orange" onclick="startGame('simulator')"><span class="game-icon">🧭</span><span class="game-number">MISSÃO 03</span><strong>Simulador de Decisões</strong><span>Suas escolhas mudam a história. Você consegue evitar a armadilha?</span><b class="play-link">JOGAR AGORA ↗</b></button>
+        <button class="game-card card-green" onclick="startGame('organize')"><span class="game-icon">🧩</span><span class="game-number">MISSÃO 04</span><strong>Organize sua Segurança</strong><span>Arraste cada atitude para o lugar certo e monte sua proteção digital.</span><b class="play-link">JOGAR AGORA ↗</b></button>
+        <button class="game-card card-pink" onclick="startGame('maze')"><span class="game-icon">🎮</span><span class="game-number">MISSÃO 05</span><strong>Labirinto dos Golpes</strong><span>Encontre os escudos de proteção e desvie das armadilhas digitais.</span><b class="play-link">JOGAR AGORA ↗</b></button>
+      </div>
+      <aside class="tip-strip"><span>💡</span><div><b>Regra de ouro</b><p>Golpistas podem usar medo, curiosidade ou ganância para apressar você. Pare, confira a informação por outro canal e só então aja.</p></div></aside>
+      <footer>CONTEÚDO EDUCATIVO · NÃO USE DADOS OU SENHAS REAIS NOS DESAFIOS</footer>
+    </section>
+
+    <section id="game" class="screen">
+      <div class="game-nav"><button class="back-btn" onclick="showHome()">← VOLTAR À CENTRAL</button><span id="game-label">MISSÃO</span></div>
+      <div id="game-content"></div>
+    </section>
+  </main>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="js/script.js"></script>
+</body>
+</html>
